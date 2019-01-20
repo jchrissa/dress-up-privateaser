@@ -2,22 +2,141 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/Style.css"/>
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+  	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  		<a href=" href="#" class="navbar-brand">Privateaser</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+
+  		<div class="collapse navbar-collapse" id="navbarMenu">
+  				<ul class="navbar-nav ml-auto">
+  			<li class="nav-item">
+  				<a href="#" class="nav-link">Users</a>
+  			</li>
+  			<li class="nav-item">
+  				<a href="#" class="nav-link">Contact</a>
+  			</li>
+  		</ul>
+  		</div>
+  	</nav>
+ <div class="row bg">
+<div class="container">
+  <div class="row align-items-start my-row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+
+ <div class="row align-items-center my-row blackground">
+    <div class="col-12 blackground text-center">
+     <h1 style="color: #FFFFFF">Please enter the informations to calculate the price</h1> 
+     </div>
+
+    <div class="col-3 align-items-center text-center ">
+      <div id="booker">
+        <p style="color:#FFFFFF">Booker name:</p>
+         <input class="js-name form-control" type="text" placeholder="Booker name"/>
+        
+      
+    </div>
+     <div id="bar">
+       <p style="color:#FFFFFF">Bar name:</p>
+        <input class="js-name  form-control" type="text" placeholder="Bar name"/>
+    
+    </div>
+    </div>
+
+
+ <div class="col-6 align-items-center text-center ">
+       <div id="bar">
+        <p style="color:#FFFFFF">Price per hour:</p>  
+        <input class="js-price-by-hour form-control" type="number" placeholder="Price by hour"/>
+    
     </div>
     <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+      <p style="color:#FFFFFF">Time in hour:</p>  
+       <input class="js-time form-control" type="number form-control" placeholder="Time in h"/>
+      
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+  </div>
+
+    <div class="col-3 align-items-center text-center ">
+       <div id="bar">
+        <p style="color:#FFFFFF">Price by person:</p>
+         
+       <input class="js-price-by-person form-control" type="number" placeholder="Price by person"/>
+       <p style="color:#FFFFFF">Persons:</p>
+        
+       <input class="js-persons form-control" type="number" placeholder="Persons"/>
+     </div>
+    </div>
+  </div>
+
+  <div class="row align-items-center my-row blackground ">
+
+    <div class="col-4 text-center">
+  
+      </div>
+    
+
+       <div class="col-4 text-center">
+      <div class="row text-center">
+        <div class="col text-center">
+          <div id="bar">
+<label style="color: #FFFFFF">Deductible option :</label>
+       <input class="js-option " type="checkbox" placeholder="Deductible option"/>
+      </div>
+    </div>
+    </div>
+      <div class="row text-center">
+      <div class="col text-center">
+        <div id="booker">
+<button id="compute" type="button" class="btn btn-secondary">Compute</button>
+
+</div>
+        </div>
+      </div>
+ 
+      </div>
+    <div class="col-4">
+<div class="label" id="actors"></div>
+    </div>
+
+  </div>
+</div>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="bar">
+    </div>
+    <div id="booker">
+    </div>
+   
+   
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 </html>
